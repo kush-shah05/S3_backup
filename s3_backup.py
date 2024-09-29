@@ -13,7 +13,7 @@ def createbucket(s3):
 def uploadbackup(s3):
     data=open(r'C:\Users\Kush\OneDrive\Desktop\DevOps2024\Linux\backup_20240924_201054.tar.gz','rb')
     s3.Bucket('pythonfordevopsbykush').put_object(Key='my_backup.tar.gz',Body=data)
-    print('backed up successfully!!')
+    print('backed up successfully!!!')
 uploadbackup(s3)
 #createbucket(s3)
 #showbuckets(s3)
